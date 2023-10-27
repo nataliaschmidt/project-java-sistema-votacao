@@ -6,9 +6,10 @@ package com.betrybe.sistemadevotacao;
 public abstract class Pessoa {
 
   /**
-   * The Nome.
+   * O nome da pessoa.
    */
   protected String nome;
+
 
   /**
    * Gets nome.
