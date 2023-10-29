@@ -1,16 +1,17 @@
 package com.betrybe.sistemadevotacao;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 /**
  * The type Gerenciamento votacao.
  */
 public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
 
-  private ArrayList<PessoaCandidata> pessoasCandidatas = new ArrayList<PessoaCandidata>();
-  private ArrayList<PessoaEleitora> pessoasEleitoras = new ArrayList<PessoaEleitora>();
+  private final ArrayList<PessoaCandidata> pessoasCandidatas = new ArrayList<>();
+  private final ArrayList<PessoaEleitora> pessoasEleitoras = new ArrayList<>();
 
-  private ArrayList<String> cpfsComputados = new ArrayList<String>();
+  private final ArrayList<String> cpfsComputados = new ArrayList<>();
 
   @Override
   public void cadastrarPessoaCandidata(String nome, int numero) {
@@ -26,7 +27,7 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
   @Override
   public void cadastrarPessoaEleitora(String nome, String cpf) {
     for (PessoaEleitora pessoaEleitora : this.pessoasEleitoras) {
-      if (pessoaEleitora.getCpf() == cpf) {
+      if (Objects.equals(pessoaEleitora.getCpf(), cpf)) {
         System.out.println("Pessoa eleitora já cadastrada!");
         return;
       }
