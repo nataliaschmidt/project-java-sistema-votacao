@@ -1,4 +1,4 @@
-# Blog API
+# Sistema de Votação
 
 Desafio da Aceleração em Java proposto pela Trybe para abranger conceitos de POO, input e output, estruturas de dados e estrutura de repetição em Java.
 O desafio consiste em desenvolver um sistema de votação eletrônico. Esse sistema deve permitir o cadastro das pessoas candidatas, o cadastro das pessoas eleitoras, iniciar o processo de votação e apresentar os resultados da eleição.
